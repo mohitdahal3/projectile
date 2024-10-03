@@ -52,13 +52,11 @@ function mousePressed(){
     //     ball.velocity = createVector(ball.velocity.x , -10);
     // }
     particles.clearParticles();
-    if(ball.position.y == height-gx-ball.r){
     let m = createVector(mouseX , mouseY);
     m.sub(ball.position);
     // m.normalize();
     m.mult(0.1);
     ball.velocity = m;
-    }
 }
 
 function pulldown(obj){
